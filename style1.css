@@ -1,0 +1,42 @@
+body {
+    background-image: url("http://cx.aos.ask.com/question/aq/1400px-788px/attach-fishing-line-bobber_27b0af21d350dbff.jpg");
+    background-size: cover;
+}
+.overlay{
+    opacity:0.4;
+    background-color:Black;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:-2;
+}
+.textbox {
+    color: white;
+    z-index: -1; position:relative;
+}
+#website {
+    display: block;
+}
+a:link {
+    color: #FAF9F8;
+    text-decoration: none;
+}
+a:visited{
+    color: #FAF9F8;
+    text-decoration: none;
+}
+a:hover {
+    color: #FAF9F8;
+    text-decoration: none;
+}
+a:active {
+    color: #FAF9F8;
+    text-decoration: none;
+}
+.text {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 37%;
+}
