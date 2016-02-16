@@ -1,7 +1,12 @@
+@font-face {
+    font-family: seriously;
+    src: url(seriously.ttf);
+}
 
 #nav {
     text-align: center;
     border-radius: 25px;
+    font-family: seriously;
 }
 .nav {
     list-style-type: none;
@@ -45,6 +50,7 @@ html {
 body, html {
     margin:0;
     height:100%;
+    font-family: seriously;
 }
 #header {
     ;
@@ -55,6 +61,7 @@ body, html {
     padding: 1px;
     color: white;
     border-radius: 25px;
+    font-family: seriously;
 }
 #main {
     background-color: #551C25;
@@ -64,6 +71,8 @@ body, html {
     height: 100%;
     font-size: 25px;
     opacity: 0.9;
+    font-family: seriously;
+    text-align: center;
 }
 #footer {
     background-color: #551C25;
@@ -71,7 +80,7 @@ body, html {
     margin-right: 7%;
     margin-top: 20px;
     font-size: 20px;
-
+    font-family: seriously;
 }
 #nav {
     margin-left: 7%;
@@ -101,3 +110,19 @@ body, html {
     color: #FAF9F8;
     width: 60%;
 }
+
+button {
+    color: #36312F;
+    border-style: solid;
+    border-width: 5px;
+}
+
+a {
+    color: white;
+}
+
+img {
+    width: 395px;
+    height: 295px;
+}
+

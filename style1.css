@@ -1,6 +1,13 @@
+@font-face {
+    font-family: seriously;
+    src: url(seriously.ttf);
+}
+
+
 body {
     background-image: url("http://cx.aos.ask.com/question/aq/1400px-788px/attach-fishing-line-bobber_27b0af21d350dbff.jpg");
     background-size: cover;
+    font-family: seriously;
 }
 .overlay{
     opacity:0.4;
@@ -18,6 +25,7 @@ body {
 }
 #website {
     display: block;
+    font-family: seriously;
 }
 a:link {
     color: #FAF9F8;

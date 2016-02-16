@@ -9,7 +9,7 @@
 <div class="overlay"></div>
 <div id = website>
     <p class="log" align="right">
-       <button  type="button"><a href="login.php">Log In/Sign Up</a></button>
+        <button  type="button"><a href="login.php">Log In/Sign Up</a></button>
     </p>
     <div class="cart-wrap">
         <a href="cart.php" aria-label="Cart" title="Cart" data-lid="hdr_carticon">
@@ -26,23 +26,33 @@
                 <!-- Nav stuff -->
                 <ul class="nav">
                     <li><a href="mainpage.html"  style="color: #FAF9F8">Home</a></li>
-                    <li><a href="products.html" style="color: #FAF9F8">Products</a></li>
+                    <li><a href="products.html" >Products</a></li>
                     <li><a href="contact.html" style="color: #FAF9F8">Contact</a></li>
-                    <li><a href="about.html" class="active" style="color: #FAF9F8">About</a></li>
+                    <li><a href="about.html" style="color: #FAF9F8">About</a></li>
                     <li><a href="faq.html" style="color: #FAF9F8">FAQ</a></li>
-                    <li><a href="profile.php" style="color:#FAF9F8;">Profile</a></li>
+                    <li><a href="profile.php" class="active" style="color:#FAF9F8;">Profile</a></li>
                 </ul>
             </div>
             <div id="main">
                 <!-- Main -->
-                <h2 style="color: #FAF9F8">About The Fishing Den</h2>
-                <h5 style="color: #FAF9F8">Hello! I, the owner of The Fishing Den, personally welcome you and thank you for visiting this site and considering us. The Fishing Den is
-                striding to become one of the most trusted and reliable sellers of fishing gear and supplies. With a variety of rods and the required accessories, our shop has
-                    everything you need at an unbeatable price. I once again thank you for your consideration and business.</h5>
-
             </div>
         </div>
     </div>
 </div>
 </body>
-</html>
+
+<?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "root";
+
+try {
+    $dbh = new PDO("mysql:host=$servername;dbname=mydb", $username, $password);
+    // set the PDO error mode to exception
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch(PDOException $e)
+{
+    echo "Connection failed: " . $e->getMessage();
+}
+?>

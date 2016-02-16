@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="loginstyle.css" />
     <meta charset="UTF-8">
     <title>The Fishing Den</title>
 </head>
@@ -25,21 +25,41 @@
             <div id="nav">
                 <!-- Nav stuff -->
                 <ul class="nav">
-                    <li><a href="mainpage.html" class="active" style="color: #FAF9F8">Home</a></li>
-                    <li><a href="products.html" style="color: #FAF9F8">Products</a></li>
-                    <li><a href="contact.html" style="color: #FAF9F8">Contact</a></li>
-                    <li><a href="about.html" style="color: #FAF9F8">About</a></li>
-                    <li><a href="faq.html" style="color: #FAF9F8">FAQ</a></li>
-                    <li><a href="profile.php" style="color:#FAF9F8;">Profile</a></li>
+                    <li><a href="mainpage.html"  style="color: #FAF9F8">Back to the Main Page</a></li>
                 </ul>
             </div>
             <div id="main">
                 <!-- Main -->
-                <h2 style="color: #FAF9F8">Want to see the gear?</h2>
-                <p style="color: #FAF9F8">Click on the Products tab to check out the merchandise!</p>
+                <h2 style="text-align: center; color: #FAF9F8">Sign Up</h2>
+                <form>
+                    First name:<br>
+                    <input type="text" name="firstname"><br>
+                    Last name:<br>
+                    <input type="text" name="lastname"><br>
+                    Email<br>
+                    <input type="text" name="email"><br>
+                    <input type="submit" value="Submit">
+                </form>
+
             </div>
         </div>
     </div>
 </div>
 </body>
 </html>
+
+<?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "root";
+
+try {
+    $dbh = new PDO("mysql:host=$servername;dbname=mydb", $username, $password);
+    // set the PDO error mode to exception
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch(PDOException $e)
+{
+    echo "Connection failed: " . $e->getMessage();
+}
+?>

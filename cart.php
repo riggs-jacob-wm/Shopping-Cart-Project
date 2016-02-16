@@ -25,25 +25,35 @@
             <div id="nav">
                 <!-- Nav stuff -->
                 <ul class="nav">
-                    <li><a href="mainpage.html"  style="color: #FAF9F8">Home</a></li>
-                    <li><a href="products.html" style="color: #FAF9F8">Products</a></li>
-                    <li><a href="contact.html" class="active" style="color: #FAF9F8">Contact</a></li>
-                    <li><a href="about.html" style="color: #FAF9F8">About</a></li>
-                    <li><a href="faq.html" style="color: #FAF9F8">FAQ</a></li>
-                    <li><a href="profile.php" style="color:#FAF9F8;">Profile</a></li>
+                    <li><a href="mainpage.html"  style="color: #FAF9F8">Back to the Main Page</a></li>
                 </ul>
             </div>
             <div id="main">
                 <!-- Main -->
-                <h2 style="color: #FAF9F8">Want to get a hold of us or find out more about us?</h2>
-                <h4 style="color: #FAF9F8">Here are the options:</h4>
-                <h5 style="color: #FAF9F8">Phone: 231-432-3456</h5>
-                <h5 style="color: #FAF9F8">Facebook Page: The Fishing Den</h5>
-                <h5 style="color: #FAF9F8">Twitter: @thefishingden</h5>
-                <h5 style="color: #FAF9F8">Email: thefishingden@gmail.com</h5>
+                <button type="button" style="text-align: center;"><a href="checkout.php">Proceed to Checkout</a></button>
             </div>
         </div>
     </div>
 </div>
 </body>
 </html>
+
+<?php
+
+include('connection.php');
+
+$query = $handler->query('SELECT * FROM products');
+
+while($r = $query->fetch()) {
+    echo $r['productname'], '<br>';
+    echo $r['productquantity'], '<br>';
+    echo $r['productprice'], '<br>';
+
+}
+
+
+
+?>
+
+
+

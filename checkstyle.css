@@ -3,7 +3,6 @@
     src: url(seriously.ttf);
 }
 
-
 #nav {
     text-align: center;
     border-radius: 25px;
@@ -19,7 +18,6 @@
 li {
     float: none;
     display: inline-block;
-    font-family: seriously;
 }
 li a {
     display: block;
@@ -52,6 +50,7 @@ html {
 body, html {
     margin:0;
     height:100%;
+    font-family: seriously;
 }
 #header {
 ;
@@ -73,6 +72,7 @@ body, html {
     font-size: 25px;
     opacity: 0.9;
     font-family: seriously;
+    text-align: center;
 }
 #footer {
     background-color: #551C25;
@@ -81,7 +81,6 @@ body, html {
     margin-top: 20px;
     font-size: 20px;
     font-family: seriously;
-
 }
 #nav {
     margin-left: 7%;
@@ -95,7 +94,9 @@ body, html {
     padding: 20px;
 
 }
-
+#website {
+    height: 100%
+}
 #info{
     height: 100%;
 }
@@ -110,11 +111,17 @@ body, html {
     width: 60%;
 }
 
-a {
-    color: white;
-}
 button {
     color: #36312F;
     border-style: solid;
     border-width: 5px;
+}
+
+a {
+    color: white;
+}
+
+img {
+    width: 395px;
+    height: 295px;
 }
